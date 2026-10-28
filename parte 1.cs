@@ -68,3 +68,53 @@ namespace Parte_1
         }
     }
 }
+
+
+
+
+
+parte de oli
+class Program
+    {
+        static void Main(string[] args)
+        {
+            int Seleccion_Modo;
+
+            string nombvreequipo1 = "";
+            string nombredeGladiador1 = "";
+            string nombredeGladiador2 = "";
+
+            Console.WriteLine("ELIGE EL MODO");
+            Console.WriteLine("1 - 1V1");
+            Console.WriteLine("2 - 2V2");
+            Console.WriteLine("3 - 3V3");
+            Console.WriteLine("4 - 5V5");
+            Console.Write("Respuesta: ");
+
+            Seleccion_Modo = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("PERSONALIZACION JUGADOR 1");
+
+            Console.Write("nombre del equipo: ");
+            nombvreequipo1 = Console.ReadLine();
+
+            Console.Write("nombre del Gladiador 1: ");
+            nombredeGladiador1 = Console.ReadLine();
+
+            if (Seleccion_Modo >= 2)
+            {
+                Console.Write("nombre del Gladiador 2: ");
+                nombredeGladiador2 = Console.ReadLine();
+            }
+
+            Console.WriteLine();
+            Console.WriteLine("eqyuipo: " + nombvreequipo1);
+            Console.WriteLine("Gladiador 1: " + nombredeGladiador1);
+
+            if (Seleccion_Modo >= 2)
+            {
+                Console.WriteLine("Gladiador 2: " +  nombredeGladiador2);
+            }
+        }
+    }
+}
