@@ -9,10 +9,13 @@ namespace Parte_1
         {
             int Seleccion_Modo;
 
+            /*VARIABLES JUGADOR 1*/
             string NombreEquipo1 = "";
             string NameGladiador1 = "";
             string NameGladiador2 = "";
             string NameGladiador3 = "";
+            string NameGladiador4 = "";
+            string NameGladiador5 = "";
 
             Console.WriteLine("#ELIGE EL MODO QUE VA A USAR#");
             Console.Write("|1| 1V1 -  ");
@@ -23,25 +26,34 @@ namespace Parte_1
             Console.Write("Respuesta: ");
             Seleccion_Modo = int.Parse(Console.ReadLine());
 
+            /* Base de Datos Funcion "PersonalizacionJugador1" */
             string[] Datos = PersonalizacionJugador1(Seleccion_Modo);
             NombreEquipo1 = Datos[0];
             NameGladiador1 = Datos[1];
             NameGladiador2 = Datos[2];
             NameGladiador3 = Datos[3];
+            NameGladiador4 = Datos[4];
+            NameGladiador5 = Datos[5];
 
-            Console.WriteLine("Modo: " + Seleccion_Modo);
-            Console.WriteLine("Equipo: " + NombreEquipo1);
-            Console.WriteLine("Gladiador 1: " + NameGladiador1);
-            Console.WriteLine("Gladiador 2: " + NameGladiador2);
-            Console.WriteLine("Gladiador 3: " + NameGladiador3);
+            /*Prueba de guardado de Datos*/
+            Console.WriteLine($"Modo: {Seleccion_Modo}");
+            Console.WriteLine($"Equipo: {NombreEquipo1}");
+            Console.WriteLine($"Gladiador 1: {NameGladiador1}");
+            Console.WriteLine($"Gladiador 2: {NameGladiador2}");
+            Console.WriteLine($"Gladiador 3: {NameGladiador3}");
+            Console.WriteLine($"Gladiador 4: {NameGladiador4}");
+
         }
 
         static string[] PersonalizacionJugador1(int Modo)
         {
+            /* Variables de la Funcion */
             string NameEquipo1 = "";
             string NameGladiador1 = "";
             string NameGladiador2 = "";
             string NameGladiador3 = "";
+            string NameGladiador4 = "";
+            string NameGladiador5 = "";
 
             switch (Modo)
             {
@@ -99,12 +111,17 @@ namespace Parte_1
                     Console.Write("Nombre del Gladiador N°3: ");
                     NameGladiador3 = Console.ReadLine();
 
-                    Console.Write
+                    Console.Write("Nombre del Gladiador N°4:");
+                    NameGladiador4 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°5:");
+                    NameGladiador5 = Console.ReadLine();
+
                     break;
             }
-
-            string[] Datos = { NameEquipo1, NameGladiador1, NameGladiador2, NameGladiador3};
-
+            /* Guardar Datos a la BD */
+            string[] Datos = { NameEquipo1, NameGladiador1, NameGladiador2, NameGladiador3, NameGladiador4, NameGladiador5};
+            /* Mandar los Datos al Main */
             return Datos;
         }
     }
