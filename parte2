@@ -16,7 +16,7 @@ namespace Parte_1
             string NameGladiador3_1 = "";
             string NameGladiador4_1 = "";
             string NameGladiador5_1 = "";
-            int vida1_1;
+            
 
             /*VARIABLES JUGADOR 2*/
             string NombreEquipo2 = "";
@@ -35,103 +35,47 @@ namespace Parte_1
             Console.Write("Respuesta: ");
             Seleccion_Modo = int.Parse(Console.ReadLine());
 
-            /* Base de Datos Funcion "PersonalizacionJugador1" */
-            string[] Datos1 = PersonalizacionJugador1(Seleccion_Modo);
-            NombreEquipo1 = Datos1[0];
-            NameGladiador1_1 = Datos1[1];
-            NameGladiador2_1 = Datos1[2];
-            NameGladiador3_1 = Datos1[3];
-            NameGladiador4_1 = Datos1[4];
-            NameGladiador5_1 = Datos1[5];
-            vida1_1 = int.Parse(Datos1[6]);
-
-            /* Base de Datos Funcion "PersonalizacionJugador2" */
-            string[] Datos2 = PersonalizacionJugador2(Seleccion_Modo);
-            NombreEquipo2 = Datos2[0];
-            NameGladiador1_2 = Datos2[1];
-            NameGladiador2_2 = Datos2[2];
-            NameGladiador3_2 = Datos2[3];
-            NameGladiador4_2 = Datos2[4];
-            NameGladiador5_2 = Datos2[5];
-            NameGladiador5_2 = Datos2[6];
-
-
-            /*Prueba de guardado de Datos1*/
-            Console.WriteLine("JUGADOR 1");
-
-            Console.WriteLine($"Modo: {Seleccion_Modo}");
-            Console.WriteLine($"Equipo: {NombreEquipo1}");
-            Console.WriteLine($"Gladiador 1: {NameGladiador1_1}");
-            Console.WriteLine($"Gladiador 2: {NameGladiador2_1}");
-            Console.WriteLine($"Gladiador 3: {NameGladiador3_1}");
-            Console.WriteLine($"Gladiador 4: {NameGladiador4_1}");
-            Console.WriteLine($"Gladiador 5: {NameGladiador5_1}");
-
-            /*Prueba de guardado de Datos2*/
-            Console.WriteLine("JUGADOR 2");
-
-            Console.WriteLine($"Modo: {Seleccion_Modo}");
-            Console.WriteLine($"Equipo: {NombreEquipo1}");
-            Console.WriteLine($"Gladiador 1: {NameGladiador1_2}");
-            Console.WriteLine($"Gladiador 2: {NameGladiador2_2}");
-            Console.WriteLine($"Gladiador 3: {NameGladiador3_2}");
-            Console.WriteLine($"Gladiador 4: {NameGladiador4_2}");
-            Console.WriteLine($"Gladiador 5: {NameGladiador5_2}");
-        }
-
-        static string[] PersonalizacionJugador1(int Modo1)
-        {
-            /* Variables de la Funcion */
-            string NameEquipo1 = "";
-            string NameGladiador1 = "";
-            string NameGladiador2 = "";
-            string NameGladiador3 = "";
-            string NameGladiador4 = "";
-            string NameGladiador5 = "";
-            int vida1;
-
-
-            switch (Modo1)
+            switch (Seleccion_Modo)
             {
                 case 1:
                     Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 1 --");
 
                     Console.Write("Nombre del Equipo: ");
-                    NameEquipo1 = Console.ReadLine();
+                    NombreEquipo1 = Console.ReadLine();
 
                     Console.Write("Nombre del Gladiador N°1: ");
-                    NameGladiador1 = Console.ReadLine();
+                    NameGladiador1_1 = Console.ReadLine();
 
-                    
+
                     break;
 
                 case 2:
                     Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 1 --");
 
                     Console.Write("Nombre del Equipo: ");
-                    NameEquipo1 = Console.ReadLine();
+                    NombreEquipo1 = Console.ReadLine();
 
                     Console.Write("Nombre del Gladiador N°1: ");
-                    NameGladiador1 = Console.ReadLine();
+                    NameGladiador1_1 = Console.ReadLine();
 
                     Console.Write("Nombre del Gladiador N°2: ");
-                    NameGladiador2 = Console.ReadLine();
+                    NameGladiador2_1 = Console.ReadLine();
 
                     break;
 
                 case 3:
                     Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 1 --");
                     Console.Write("Nombre del Equipo: ");
-                    NameEquipo1 = Console.ReadLine();
+                    NombreEquipo1 = Console.ReadLine();
 
                     Console.Write("Nombre del Gladiador N°1: ");
-                    NameGladiador1 = Console.ReadLine();
+                    NameGladiador1_1 = Console.ReadLine();
 
                     Console.Write("Nombre del Gladiador N°2: ");
-                    NameGladiador2 = Console.ReadLine();
+                    NameGladiador2_1 = Console.ReadLine();
 
                     Console.Write("Nombre del Gladiador N°3: ");
-                    NameGladiador3 = Console.ReadLine();
+                    NameGladiador3_1 = Console.ReadLine();
 
                     break;
 
@@ -139,113 +83,94 @@ namespace Parte_1
                     Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 1 --");
 
                     Console.Write("Nombre del Equipo: ");
-                    NameEquipo1 = Console.ReadLine();
+                    NombreEquipo1 = Console.ReadLine();
 
                     Console.Write("Nombre del Gladiador N°1: ");
-                    NameGladiador1 = Console.ReadLine();
+                    NameGladiador1_1 = Console.ReadLine();
 
                     Console.Write("Nombre del Gladiador N°2: ");
-                    NameGladiador2 = Console.ReadLine();
+                    NameGladiador2_1 = Console.ReadLine();
 
                     Console.Write("Nombre del Gladiador N°3: ");
-                    NameGladiador3 = Console.ReadLine();
+                    NameGladiador3_1 = Console.ReadLine();
 
                     Console.Write("Nombre del Gladiador N°4:");
-                    NameGladiador4 = Console.ReadLine();
+                    NameGladiador4_1 = Console.ReadLine();
 
                     Console.Write("Nombre del Gladiador N°5:");
-                    NameGladiador5 = Console.ReadLine();
+                    NameGladiador5_1 = Console.ReadLine();
 
                     break;
             }
-            /* Guardar Datos a la BD */
-            string[] Datos1 = { NameEquipo1, NameGladiador1, NameGladiador2, NameGladiador3, NameGladiador4, NameGladiador5};
+
+            switch (Seleccion_Modo)
+            {
+                case 1:
+                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 2 --");
+
+                    Console.Write("Nombre del Equipo: ");
+                    NombreEquipo2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°1: ");
+                    NameGladiador1_2 = Console.ReadLine();
+
+                    break;
+
+                case 2:
+                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 2 --");
+
+                    Console.Write("Nombre del Equipo: ");
+                    NombreEquipo2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°1: ");
+                    NameGladiador1_2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°2: ");
+                    NameGladiador2_2 = Console.ReadLine();
+
+                    break;
+
+                case 3:
+                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 2 --");
+                    Console.Write("Nombre del Equipo: ");
+                    NombreEquipo2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°1: ");
+                    NameGladiador1_2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°2: ");
+                    NameGladiador2_2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°3: ");
+                    NameGladiador3_2 = Console.ReadLine();
+
+                    break;
+
+                case 4:
+                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 2 --");
+
+                    Console.Write("Nombre del Equipo: ");
+                    NombreEquipo2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°1: ");
+                    NameGladiador1_2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°2: ");
+                    NameGladiador2_2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°3: ");
+                    NameGladiador3_2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°4:");
+                    NameGladiador4_2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°5:");
+                    NameGladiador5_2 = Console.ReadLine();
+
+                    break;
+            }
+
             
-            /* Mandar los Datos al Main */
-            return Datos1;
         }
-
-        static string[] PersonalizacionJugador2(int Modo2)
-        {
-            /* Variables de la Funcion */
-            string NameEquipo2 = "";
-            string NameGladiador1 = "";
-            string NameGladiador2 = "";
-            string NameGladiador3 = "";
-            string NameGladiador4 = "";
-            string NameGladiador5 = "";
-
-            switch (Modo2)
-            {
-                case 1:
-                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 2 --");
-
-                    Console.Write("Nombre del Equipo: ");
-                    NameEquipo2 = Console.ReadLine();
-
-                    Console.Write("Nombre del Gladiador N°1: ");
-                    NameGladiador1 = Console.ReadLine();
-
-                    break;
-
-                case 2:
-                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 2 --");
-
-                    Console.Write("Nombre del Equipo: ");
-                    NameEquipo2 = Console.ReadLine();
-
-                    Console.Write("Nombre del Gladiador N°1: ");
-                    NameGladiador1 = Console.ReadLine();
-
-                    Console.Write("Nombre del Gladiador N°2: ");
-                    NameGladiador2 = Console.ReadLine();
-
-                    break;
-
-                case 3:
-                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 2 --");
-                    Console.Write("Nombre del Equipo: ");
-                    NameEquipo2 = Console.ReadLine();
-
-                    Console.Write("Nombre del Gladiador N°1: ");
-                    NameGladiador1 = Console.ReadLine();
-
-                    Console.Write("Nombre del Gladiador N°2: ");
-                    NameGladiador2 = Console.ReadLine();
-
-                    Console.Write("Nombre del Gladiador N°3: ");
-                    NameGladiador3 = Console.ReadLine();
-
-                    break;
-
-                case 4:
-                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 2 --");
-
-                    Console.Write("Nombre del Equipo: ");
-                    NameEquipo2 = Console.ReadLine();
-
-                    Console.Write("Nombre del Gladiador N°1: ");
-                    NameGladiador1 = Console.ReadLine();
-
-                    Console.Write("Nombre del Gladiador N°2: ");
-                    NameGladiador2 = Console.ReadLine();
-
-                    Console.Write("Nombre del Gladiador N°3: ");
-                    NameGladiador3 = Console.ReadLine();
-
-                    Console.Write("Nombre del Gladiador N°4:");
-                    NameGladiador4 = Console.ReadLine();
-
-                    Console.Write("Nombre del Gladiador N°5:");
-                    NameGladiador5 = Console.ReadLine();
-
-                    break;
-            }
-            /* Guardar Datos a la BD */
-            string[] Datos2 = { NameEquipo2, NameGladiador1, NameGladiador2, NameGladiador3, NameGladiador4, NameGladiador5 };
-            /* Mandar los Datos al Main */
-            return Datos2;
-        }
-
     }
 }
