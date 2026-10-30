@@ -1,0 +1,76 @@
+
+    class Program
+    {
+
+        // aca emepzariua la pelea, pongo ejemplos de daño ny vida 
+        int vida1 = 100;
+        int vida2 = 100;
+        int daño = 25;
+        int eleccion = 0;
+
+        Console.WriteLine("empieza la pelea");
+
+while (vida1 > 0 && vida2 > 0)
+{
+    // Turno Jugador 1
+    Console.WriteLine("turno de " + NombreEquipo1 + " (" + NameGladiador1_1 + ")");
+    Console.WriteLine("vida rival: " + vida2);
+    Console.WriteLine("1 Atacar");
+    Console.WriteLine("2 curartee "); // no hace nada solo es de ejemplo
+    Console.Write("elegi una opcion ");
+    eleccion = int.Parse(Console.ReadLine());
+
+    if (eleccion == 1)
+    {
+        vida2 = vida2 - golpe;
+        if (vida2< 0) 
+   {
+        vida2 = 0; 
+}
+    Console.WriteLine("le pegaste, al rival le quedan " + vida2 + " de vida.");
+    }
+    else
+    {
+        Console.WriteLine("te curaste jaja xd");
+    }
+
+    if (vida2 <= 0)
+    {
+        break;
+    }
+
+    //este es el truno del jugador n2
+    Console.WriteLine("turno  d " + NombreEquipo2 + " (" + NameGladiador1_2 + ")");
+    Console.WriteLine("tu  vida: " + vida1);
+    Console.WriteLine("1 Atacar");
+    Console.WriteLine("2 curarte");
+    Console.Write("elegi una opcion ");
+    eleccion = int.Parse(Console.ReadLine());
+
+    if (eleccion == 1)
+    {
+        vida1 = vida1 - daño;
+        if (vida1< 0) 
+       {
+       vida1 = 0;
+    
+    }
+        Console.WriteLine("te pegarin t queda " + vida1 + " de vida.");
+    }
+    else
+    {
+        Console.WriteLine("El rival se curp.");
+    }
+}
+
+
+Console.WriteLine("fin xd");
+
+if (vida1 <= 0)
+{
+    Console.WriteLine("gano el equipo" + NombreEquipo2 + "coon el soldado " + NameGladiador1_2 );
+}
+else
+{
+    Console.WriteLine("gano el equipo " + NombreEquipo1 + "con el soldado" + NameGladiador1_1 );
+}
