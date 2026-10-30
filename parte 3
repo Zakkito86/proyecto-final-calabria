@@ -1,0 +1,233 @@
+
+using System;
+
+namespace Parte_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int Seleccion_Modo;
+
+            /*VARIABLES JUGADOR 1*/
+            string NombreEquipo1 = "";
+            string NameGladiador1_1 = "";
+            string NameGladiador2_1 = "";
+            string NameGladiador3_1 = "";
+            string NameGladiador4_1 = "";
+            string NameGladiador5_1 = "";
+            /*G1*/
+            int vidaG1_1 = 0;
+            int ataqueG1_1 = 0;
+            int defensaG1_1 = 0;
+            /*G2*/
+            int vidaG2_1 = 0;
+            int ataqueG2_1 = 0;
+            int defensaG2_1 = 0;
+
+
+            /*VARIABLES JUGADOR 2*/
+            string NombreEquipo2 = "";
+            string NameGladiador1_2 = "";
+            string NameGladiador2_2 = "";
+            string NameGladiador3_2 = "";
+            string NameGladiador4_2 = "";
+            string NameGladiador5_2 = "";
+            /*G1*/
+            int vidaG1_2 = 0;
+            int ataqueG1_2 = 0;
+            int defensaG1_2 = 0;
+
+            Console.WriteLine("#ELIJAN EL MODO QUE VAN A USAR#");
+            Console.Write("|1| 1V1 -  ");
+            Console.Write("|2| 2V2 -  ");
+            Console.Write("|3| 3V3 -  ");
+            Console.WriteLine("|4| 5V5");
+
+            Console.Write("Respuesta: ");
+            Seleccion_Modo = int.Parse(Console.ReadLine());
+
+            switch (Seleccion_Modo)
+            {
+                case 1:
+                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 1 --");
+
+                    Console.Write("Nombre del Equipo: ");
+                    NombreEquipo1 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°1: ");
+                    NameGladiador1_1 = Console.ReadLine();
+                    Console.Write("¿Cuantos puntos desea utilizar en la vida?: ");
+                    vidaG1_1 = int.Parse(Console.ReadLine());
+                    Console.Write("¿Cuantos puntos desea utilizar em el ataque?: ");
+                    ataqueG1_1 = int.Parse(Console.ReadLine());
+                    Console.Write("¿Cuantos puntos desea utilizar en la defensa?: ");
+                    defensaG1_1 = int.Parse(Console.ReadLine());
+                    break;
+
+                case 2:
+                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 1 --");
+
+                    Console.Write("Nombre del Equipo: ");
+                    NombreEquipo1 = Console.ReadLine();
+                    //G1
+                    Console.Write("Nombre del Gladiador N°1: ");
+                    NameGladiador1_1 = Console.ReadLine();
+                    Console.Write("¿Cuantos puntos desea utilizar en la vida?: ");
+                    vidaG1_1 = int.Parse(Console.ReadLine()); 
+
+                    Console.Write("¿Cuantos puntos desea utilizar em el ataque?: ");
+                    ataqueG1_1 = int.Parse(Console.ReadLine());
+
+                    Console.Write("¿Cuantos puntos desea utilizar en la defensa?: ");
+                    defensaG1_1 = int.Parse(Console.ReadLine());
+                    /*G2*/
+
+                    Console.Write("Nombre del Gladiador N°2: ");
+                    NameGladiador2_1 = Console.ReadLine();
+
+                    Console.Write("¿Cuantos puntos desea utilizar en la vida?: ");
+                    vidaG2_1 = int.Parse(Console.ReadLine());
+
+                    Console.Write("¿Cuantos puntos desea utilizar em el ataque?: ");
+                    ataqueG2_1 = int.Parse(Console.ReadLine());
+
+                    Console.Write("¿Cuantos puntos desea utilizar en la defensa?: ");
+                    defensaG2_1 = int.Parse(Console.ReadLine());
+                    break;
+
+                case 3:
+                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 1 --");
+                    Console.Write("Nombre del Equipo: ");
+                    NombreEquipo1 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°1: ");
+                    NameGladiador1_1 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°2: ");
+                    NameGladiador2_1 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°3: ");
+                    NameGladiador3_1 = Console.ReadLine();
+
+                    break;
+
+                case 4:
+                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 1 --");
+
+                    Console.Write("Nombre del Equipo: ");
+                    NombreEquipo1 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°1: ");
+                    NameGladiador1_1 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°2: ");
+                    NameGladiador2_1 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°3: ");
+                    NameGladiador3_1 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°4:");
+                    NameGladiador4_1 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°5:");
+                    NameGladiador5_1 = Console.ReadLine();
+
+                    break;
+            }
+
+            switch (Seleccion_Modo)
+            {
+                case 1:
+                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 2 --");
+
+                    Console.Write("Nombre del Equipo: ");
+                    NombreEquipo2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°1: ");
+                    NameGladiador1_2 = Console.ReadLine();
+                    Console.Write("¿Cuantos puntos desea utilizar en la vida?: ");
+                    vidaG1_2 = int.Parse(Console.ReadLine());
+                    Console.Write("¿Cuantos puntos desea utilizar em el ataque?: ");
+                    ataqueG1_2 = int.Parse(Console.ReadLine());
+                    Console.Write("¿Cuantos puntos desea utilizar en la defensa?: ");
+                    defensaG1_2 = int.Parse(Console.ReadLine());
+
+
+
+                    break;
+
+                case 2:
+                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 2 --");
+
+                    Console.Write("Nombre del Equipo: ");
+                    NombreEquipo2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°1: ");
+                    NameGladiador1_2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°2: ");
+                    NameGladiador2_2 = Console.ReadLine();
+
+                    break;
+
+                case 3:
+                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 2 --");
+                    Console.Write("Nombre del Equipo: ");
+                    NombreEquipo2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°1: ");
+                    NameGladiador1_2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°2: ");
+                    NameGladiador2_2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°3: ");
+                    NameGladiador3_2 = Console.ReadLine();
+
+                    break;
+
+                case 4:
+                    Console.WriteLine("-- PERSONALIZACION DE EQUIPO JUGADOR 2 --");
+
+                    Console.Write("Nombre del Equipo: ");
+                    NombreEquipo2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°1: ");
+                    NameGladiador1_2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°2: ");
+                    NameGladiador2_2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°3: ");
+                    NameGladiador3_2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°4:");
+                    NameGladiador4_2 = Console.ReadLine();
+
+                    Console.Write("Nombre del Gladiador N°5:");
+                    NameGladiador5_2 = Console.ReadLine();
+
+                    break;
+            }
+            Console.WriteLine("Datos recopilados Jugador 1: ");
+            Console.WriteLine(NombreEquipo1);
+            Console.WriteLine(NameGladiador1_1);
+            Console.WriteLine(vidaG1_1);
+            Console.WriteLine(ataqueG1_1);
+            Console.WriteLine(defensaG1_1);
+            Console.WriteLine("Datos recopilados Jugador 2: ");
+            Console.WriteLine(NombreEquipo2);
+            Console.WriteLine(NameGladiador1_2);
+            Console.WriteLine(vidaG1_2);
+            Console.WriteLine(ataqueG1_2);
+            Console.WriteLine(defensaG1_2);
+
+                
+            
+        
+            
+            
+        }
+    }
+}
