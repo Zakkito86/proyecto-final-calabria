@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Elegi a un luchador de tu equipo: ");
+            string NameGladiador1 = Console.ReadLine();
+            Console.WriteLine("Ahora elegi a un oponente para tu luchador: ");
+            string NameGladiador2 = Console.ReadLine();
+            Console.WriteLine("Perfecto, cuanto daño desea hacerle al oponente?: ");
+            int daño = int.Parse(Console.ReadLine());
+            if (daño >= 5 && daño <= 20)
+            {
+                
+                int vida = 25;
+                int vida_total = vida - daño;
+                Console.WriteLine("La vida que le queda al oponente es de: " + vida_total);
+
+
+            }
+           
+           
+            
+            else
+            {
+                Console.WriteLine("No es posible hacer 0 de daño o menos... ");
+            }
+            
+            
+
+        }
+    }
+}
