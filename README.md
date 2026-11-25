@@ -21,5 +21,5 @@
 ---
 
 <div align="center">
-  <sub>Desarrollado en equipo para el Taller • Proyecto Ganador ⚔️</sub>
+  <sub>Desarrollado en equipo • Proyecto Ganador ⚔️</sub>
 </div>
