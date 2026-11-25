@@ -1,24 +1,9 @@
-<div align="center">
-
-  <!-- Banner superior con ondas -->
-  <img src="https://vercel.app" width="100%" />
-
-  <!-- Badges informativos -->
-  <p>
-    <img src="https://shields.io" alt="Estado" />
-    <img src="https://shields.io" alt="Equipo" />
-    <img src="https://shields.io" alt="Metodología" />
-  </p>
-
-</div>
 
 ---
 
-## 👥 Equipo y División de Módulos
+## 👥 EQUIPO-PROYECTO-GANADOR
 
-A continuación se detalla la distribución de funciones desarrolladas por cada integrante del equipo:
-
-| Integrante | Funciones / Módulos Implementados |
+| Integrante | Tareas Terminadas |
 | :--- | :--- |
 | **Benjamin Tabarcache Cano** | `ElegirModalidad` · `EsNumeroEntero` · `Modo1vs1` |
 | **Alison Quispe Casas** | `Modo2vs2` · `Modo3vs3` · `Modo5vs5` · `IniciarPartida` · `PedirNombreEquipo` · `NombreVacio` |
@@ -28,7 +13,7 @@ A continuación se detalla la distribución de funciones desarrolladas por cada 
 
 ---
 
-## 🧪 Pruebas y Dinámica de Trabajo
+## 🧪 Testeo
 
 > [!NOTE]
 > **Trabajo Colaborativo:** Cada bloque de código fue probado y validado por el grupo en general. No se realizaron pruebas individuales aisladas; todo el desarrollo y depuración se llevó a cabo mediante trabajo conjunto dentro del Taller.
