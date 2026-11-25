@@ -16,7 +16,7 @@
 ## 🧪 Testeo
 
 > [!NOTE]
-> **Trabajo Colaborativo:** Cada bloque de código fue probado y validado por el grupo en general. No se realizaron pruebas individuales aisladas; todo el desarrollo y depuración se llevó a cabo mediante trabajo conjunto dentro del Taller.
+> **Trabajo Colaborativo:** Cada Códigos fue Testeados por el grupo en general.
 
 ---
 
