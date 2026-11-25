@@ -15,7 +15,7 @@
 
 ## 🧪 Testeo
 
-> [!INFO]
+> [!Note]
 > **Trabajo Colaborativo:** Cada Códigos fue Testeados por el grupo en general.
 
 ---
